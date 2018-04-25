@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			
+			/*1、标签类型选择器*/
+			a{
+				text-decoration: none;
+			}
+			
+			/*2、包含选择符*/
+			span[class = class1]{
+				color: red;
+			}
+			
+			/*3、内部包含选择符*/
+			div a{
+				color: paleturquoise;
+			}
+			
+			/*4、子对象选择符*/
+			body>p{
+				font-size: 30px;
+			}
+			
+			/*5、id选择符*/
+			#divId{
+				font-size: 20px;
+				color: deeppink;
+			}
+			
+			/*6、类选择符*/
+			.class2{
+				font-size: 25px;
+				color: blueviolet;
+			}
+			
+			/*分组选择器*/
+			
+		</style>
+	</head>
+	<body>
+		
+		<a href="http://baidu.com">百度一下，你就知道</a>
+		<br />
+		<span class="class1">这里有一行。</span>
+		
+		<div id="">
+			<a href="http://baidu.com">百度一下，你就知道</a>
+		</div>
+		
+		<p>这里有一个段落</p>
+		
+		<div>
+			<p>这里还有一个段落</p>
+		</div>
+		
+		<div class="classDiv">
+			这里有一个div.
+		</div>
+		
+		<div id="divId">
+			这里还有一个div.
+		</div>
+		
+		<span class="class2">这里有另一行</span>
+	</body>
+</html>
